@@ -59,6 +59,7 @@ input {
     border: 1px solid #DBDBDB;
     width: 112px;
     padding: 12px 24px;
+    outline: none;
 }
 
 #output {
@@ -120,7 +121,7 @@ hr {
     padding: 55px;
 }
 
-.outputInfo {
+.output-info {
     display: flex;
     line-height: 111%;
 }
@@ -136,4 +137,25 @@ button {
 button:hover {
     background: black;
     cursor: pointer;
+}
+
+.error-label {
+    color: #FF5757;
+}
+
+.error-input {
+    border: 1px solid #FF5757;
+}
+
+.error-msg {
+    display: none;
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #FF5757;
+}
+
+.visible {
+    display: flex;
 }

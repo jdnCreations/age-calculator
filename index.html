@@ -13,19 +13,22 @@
   <div id="card">
     <form action="" id="form">
       <div id="input">
-        <div>
+        <div id="day-container">
           <label for="day" class="labels">DAY</label>
-          <input id="day" name="day" type="number" placeholder="DD"></input>
+          <input id="day" name="day" type="text" pattern="\d{1,2}" placeholder="DD"></input>
+          <p class="error-msg"></p>
         </div>
 
-        <div>
+        <div id="month-container">
           <label for="month" class="labels">MONTH</label>
-          <input id="month" name="month" type="number" placeholder="MM"></input>
+          <input min="1" max="12" maxlength="2" id="month" name="month" type="text" pattern="\d{1,2}" placeholder="MM"></input>
+          <p class="error-msg"></p>
         </div>
 
-        <div>
+        <div id="year-container">
           <label for="year" class="labels">YEAR</label>
-          <input id="year" name="year" type="number" placeholder="YYYY"></input>
+          <input id="year" name="year" type="text" placeholder="YYYY" pattern="\d{4}" maxlength="4"></input>
+          <p class="error-msg"></p>
         </div>
       </div>
 
@@ -37,20 +40,21 @@
     </form>
 
     <div id="output">
-      <div class="outputInfo">
-        <p class="numbers">--</p> 
+      <div class="output-info">
+        <p class="numbers" id="years">--</p> 
         <p id="label">years</p>
       </div>
-      <div class="outputInfo">
-        <p class="numbers">--</p> 
+      <div class="output-info">
+        <p class="numbers" id="months">--</p> 
         <p id="label">months</p>
       </div>
-      <div class="outputInfo">
-        <p class="numbers">--</p> 
+      <div class="output-info">
+        <p class="numbers" id="days">--</p> 
         <p id="label">days</p>
       </div>
     </div>
   </div>
+  <script src="dayjs.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
