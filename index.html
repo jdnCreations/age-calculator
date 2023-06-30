@@ -11,28 +11,30 @@
 </head>
 <body>
   <div id="card">
-    <div id="input">
-      <div>
-        <label for="day" class="labels">DAY</label>
-        <input name="day" type="text" placeholder="DD"></input>
+    <form action="" id="form">
+      <div id="input">
+        <div>
+          <label for="day" class="labels">DAY</label>
+          <input id="day" name="day" type="number" placeholder="DD"></input>
+        </div>
+
+        <div>
+          <label for="month" class="labels">MONTH</label>
+          <input id="month" name="month" type="number" placeholder="MM"></input>
+        </div>
+
+        <div>
+          <label for="year" class="labels">YEAR</label>
+          <input id="year" name="year" type="number" placeholder="YYYY"></input>
+        </div>
       </div>
 
-      <div>
-        <label for="month" class="labels">MONTH</label>
-        <input name="month" type="text" placeholder="MM"></input>
+      <div id="images">
+        <div><hr></div>
+        <!-- <img src="./assets/images/break.svg" alt=""> -->
+        <button type="submit"><img src="./assets/images/icon-arrow.svg"/></button>
       </div>
-
-      <div>
-        <label for="year" class="labels">YEAR</label>
-        <input name="year" type="text" placeholder="YYYY"></input>
-      </div>
-    </div>
-
-    <div id="images">
-      <div><hr></div>
-      <!-- <img src="./assets/images/break.svg" alt=""> -->
-      <img src="./assets/images/arrow-circle.svg" alt="">
-    </div>
+    </form>
 
     <div id="output">
       <div class="outputInfo">

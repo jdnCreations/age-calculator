@@ -17,6 +17,17 @@
     src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+        -moz-appearance: textfield;
+        appearance: none;
+    }
+
 * {
     font-family: Poppins;
     margin: 0;
@@ -112,4 +123,17 @@ hr {
 .outputInfo {
     display: flex;
     line-height: 111%;
+}
+
+button {
+    background: #854dff;
+    height: 98px;
+    width: 98px;
+    border-radius: 100%;
+    border: none;
+}
+
+button:hover {
+    background: black;
+    cursor: pointer;
 }
